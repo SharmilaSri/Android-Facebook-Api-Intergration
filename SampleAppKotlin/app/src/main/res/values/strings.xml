@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sample App Kotlin</string>
+
+    <!--fb login-->
+    <string name="facebook_app_id">2306662472799375</string>
+    <string name="fb_login_protocol_scheme">fb2306662472799375</string>
+
+    <string name="image_content_desc">fb2306662472799375</string>
+</resources>
