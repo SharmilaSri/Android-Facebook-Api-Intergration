@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleAppKotlin">
-        <activity android:name=".DisplayDetailActivity"></activity>
+        <activity android:name=".DisplayDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

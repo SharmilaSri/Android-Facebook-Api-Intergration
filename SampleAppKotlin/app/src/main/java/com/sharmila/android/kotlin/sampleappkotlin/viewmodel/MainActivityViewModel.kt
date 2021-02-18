@@ -13,7 +13,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivityViewModel : ViewModel() {
-
+    val BASE_URL = "https://dl.dropboxusercontent.com/s/6nt7fkdt7ck0lue/hotels.json/"
     //var hotelList: MutableLiveData<HotelList>=MutableLiveData()
     lateinit var hotelsList:MutableLiveData<HotelList>
 
@@ -28,7 +28,7 @@ class MainActivityViewModel : ViewModel() {
 
         //This method is using Retrofit to get the JSON data from URL
         val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("https://dl.dropboxusercontent.com/s/6nt7fkdt7ck0lue/hotels.json/")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         val service = retrofit.create(ApiService::class.java)
